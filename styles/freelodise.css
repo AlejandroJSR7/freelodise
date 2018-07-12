@@ -1,0 +1,117 @@
+/* MENU  */
+  /** xx Fonts **/
+  /** xx Global **/
+  /** xx Helpers **/
+  /** xx Header **/
+
+/** xx Fonts **/
+
+/**
+  font-family: 'Barlow', sans-serif;
+**/
+
+/** xx Global **/
+* { box-sizing: border-box; }
+body {
+  font-family: 'Barlow', sans-serif;
+  margin: 0;
+}
+
+/** xx Helpers **/
+
+.container {
+  min-width: 1035px;
+}
+
+/** xx Header **/
+
+header {}
+.header__top {
+  align-items: center;
+  background-color: #2c154d;
+  display: flex;
+  justify-content: space-around;
+  min-height: 90px;
+}
+.header__top .container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  margin: 0;
+}
+.header__logo img {
+  height: 32px;
+  width: 201px;
+}
+
+.header__search,
+.header__search form {
+  display: flex;
+}
+.header__search input[type="search"] {
+  border-radius: 3px 0 0 3px;
+  border: 1px solid #bdbdbd;
+  color: #2c154d;
+  font-weight: 300;
+  height: 40px;
+  opacity: 0.97;
+  padding: 10px 10px 11px 10px;
+  text-align: center;
+  transition: opacity 0.5s ease;
+  width: 425px;
+}
+.header__search input[type="search"]:hover,
+.header__search input[type="search"]:focus,
+.header__search input[type="search"]:active {
+  opacity: 1;
+}
+.header__search input[type="search"]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #2c154d;
+  opacity: 1; /* Firefox */
+}
+.header__search input[type="search"]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #2c154d;
+}
+.header__search input[type="search"]::-ms-input-placeholder { /* Microsoft Edge */
+  color: #2c154d;
+}
+.header__search input[type="button"],
+.header__search input[type="submit"],
+.header__search button {
+  background-color: #9966cc;
+  background-image: url("../images/design/icons/icon-search.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: initial;
+  border-radius: 0 3px 3px 0;
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+  height: 40px;
+  opacity: 0.85;
+  transition: opacity 0.5s ease;
+  width: 40px;
+}
+.header__search input[type="button"]:hover,
+.header__search input[type="submit"]:hover,
+.header__search button:hover {
+  opacity: 1;
+  background-size: calc(initial + 10%);
+}
+
+.header__user-nav {}
+
+.header__user-nav .user-info {}
+.header__user-nav .user-info img {}
+.header__user-nav .user-info__text {}
+.header__user-nav .user-info__text span {}
+
+.header__bottom__nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.header__bottom__nav li {}
