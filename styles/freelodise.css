@@ -2,25 +2,48 @@
   /** xx Fonts **/
   /** xx Global **/
   /** xx Helpers **/
+  /** xx Icons **/
   /** xx Header **/
 
 /** xx Fonts **/
 
 /**
   font-family: 'Barlow', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
 **/
 
 /** xx Global **/
-* { box-sizing: border-box; }
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: 'Barlow', sans-serif;
-  margin: 0;
 }
 
 /** xx Helpers **/
 
 .container {
   min-width: 1035px;
+}
+
+/** xx Icons **/
+
+[class^="icon"] {
+  display: flex;
+}
+.icon--user {
+  background-image: url('../images/design/icons/icon-user--nav.png');
+  background-size: 100% 100%;
+  background-size: cover;
+  height: 21px;
+  width: 21px;
 }
 
 /** xx Header **/
@@ -38,9 +61,7 @@ header {}
   display: flex;
   justify-content: space-between;
 }
-.header__logo {
-  margin: 0;
-}
+.header__logo {}
 .header__logo img {
   height: 32px;
   width: 201px;
@@ -100,14 +121,53 @@ header {}
   opacity: 1;
   background-size: calc(initial + 10%);
 }
+.header__user-nav .header__user-nav-dropdown {
+  align-items: center;
+  background-color: #9966cc;
+  border-radius: 20px 20px 0 20px;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  min-width: 190px;
+  padding: 10px 25px;
+  width: initial;
+}
+.header__user-nav .header__user-nav-dropdown.active {
+  border-radius: 20px 20px 0 20px;
+  background-color: #9966cc;
+}
+.header__user-nav .header__user-nav-dropdown:after {
+  display: none;
+}
+.header__user-nav .header__user-nav-dropdown .icon--user {
+  margin-right: 15px;
+}
+.header__user-nav .header__user-nav-dropdown span {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+.header__user-nav .header__user-nav-dropdown span em {
+  font-weight: 500;
+  font-style: normal;
+}
+.header__user-nav .header__user-nav-dropdown .dropdown,
+.header__user-nav .header__user-nav-dropdown.active .dropdown {
+  background: #f2f2f2;
+  border-radius: 3px 0 3px 3px;
+  border: 0;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  top: calc(100% + 5px);
+}
+.header__user-nav .header__user-nav-dropdown .dropdown li a {
+  border: 0;
+  color: #5e4c76;
+}
 
-.header__user-nav {}
-
-.header__user-nav .user-info {}
-.header__user-nav .user-info img {}
-.header__user-nav .user-info__text {}
-.header__user-nav .user-info__text span {}
-
+/* header bottom */
 .header__bottom__nav {
   list-style: none;
   padding: 0;
