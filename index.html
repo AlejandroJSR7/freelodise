@@ -8,7 +8,12 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,500,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500" rel="stylesheet">
-  <link rel="stylesheet" href="styles/freelodise.css">
+
+  <!-- <link rel="stylesheet" href="styles/freelodise.css"> -->
+  <style>
+    @import url("styles/freelodise.css");
+  </style>
+
   <link rel="stylesheet" href="vendors/css/cd-dropdown/cd-dropdown.css">
 
   <script type="text/javascript" src="vendors/js/modernizr.custom.79639.js"></script> 
@@ -64,31 +69,75 @@
       <nav>
         <div class="container">
           <ul class="header__bottom__nav">
-            <li>
+            <li class="js-toggle-category-selector toggle-category-selector">
               <i class="icon--locacion"></i>
               <span>Locación</span>
+              <div class="js-categories-selector-list categories-selector-list">
+                <div class="container">
+                  <nav>
+                    <ul>
+                      <h3>Diseño</h3>
+                      <li><a href="javascript:void(0);">Branding</a></li>
+                      <li><a href="javascript:void(0);">Packaging</a></li>
+                      <li><a href="javascript:void(0);">Diseño editorial</a></li>
+                      <li><a href="javascript:void(0);">Diseño web</a></li>
+                      <li><a href="javascript:void(0);">Diseño de interiores</a></li>
+                      <li><a href="javascript:void(0);">Modelado 3D</a></li>
+                      <li><a href="javascript:void(0);">Diseño industrial</a></li>
+                    </ul>
+                    <ul>
+                      <h3>Audiovisual</h3>
+                      <li><a href="javascript:void(0);">Edición de Video</a></li>
+                      <li><a href="javascript:void(0);">Grabación de video</a></li>
+                      <li><a href="javascript:void(0);">Animación 2D</a></li>
+                      <li><a href="javascript:void(0);">Animación 3D</a></li>
+                      <li><a href="javascript:void(0);">Equípos fotográficos</a></li>
+                      <li><a href="javascript:void(0);">Edición de imagen</a></li>
+                      <li><a href="javascript:void(0);">Efectos especiales</a></li>
+                    </ul>
+                    <ul>
+                      <h3>Música</h3>
+                      <li><a href="javascript:void(0);">Cantantes</a></li>
+                      <li><a href="javascript:void(0);">Grupos musicales</a></li>
+                      <li><a href="javascript:void(0);">Instrumentos musicales</a></li>
+                      <li><a href="javascript:void(0);">Estudio de grabación</a></li>
+                      <li><a href="javascript:void(0);">Compositores</a></li>
+                      <li><a href="javascript:void(0);">Edición de audio</a></li>
+                    </ul>
+                    <ul>
+                      <h3>Eventos</h3>
+                      <li><a href="javascript:void(0);">Eventos empresariales</a></li>
+                      <li><a href="javascript:void(0);">Conferencias</a></li>
+                      <li><a href="javascript:void(0);">Fiestas</a></li>
+                      <li><a href="javascript:void(0);">Decoración</a></li>
+                      <li><a href="javascript:void(0);">Bufette</a></li>
+                      <li><a href="javascript:void(0);">Organización</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
             </li>
-            <li>
+            <li class="js-toggle-category-selector toggle-category-selector">
               <i class="icon--entretenimiento"></i>
               <span>Entretenimiento</span>
             </li>
-            <li>
+            <li class="js-toggle-category-selector toggle-category-selector">
               <i class="icon--bienestar"></i>
               <span>Bienestar</span>
             </li>
-            <li>
+            <li class="js-toggle-category-selector toggle-category-selector">
               <i class="icon--educacion"></i>
               <span>Educación</span>
             </li>
-            <li>
+            <li class="js-toggle-category-selector toggle-category-selector">
               <i class="icon--personal"></i>
               <span>Personal</span>
             </li>
-            <li>
+            <li class="js-toggle-category-selector toggle-category-selector">
               <i class="icon--negocios"></i>
               <span>Negocios</span>
             </li>
-            <li>
+            <li class="js-toggle-category-selector toggle-category-selector">
               <i class="icon--mas"></i>
               <span>Más</span>
             </li>

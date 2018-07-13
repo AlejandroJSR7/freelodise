@@ -45,3 +45,25 @@
   }
 
 })();
+
+(function showCategorySelector() {
+  let toggleMenuItems = document.querySelectorAll(".js-toggle-category-selector");
+  console.log("toggleMenuItems", toggleMenuItems);
+
+  for(var i = 0; i < toggleMenuItems.length; i++ ) {
+    toggleMenuItems[i].addEventListener('click', function() {
+      let thisItem = this;
+      let element = toggleMenuItems[0];
+      console.log('element.tagName', element.tagName);
+
+      while(element) {
+        if(element.tagName === 'LI') {
+          element.classList.remove('active');
+        }
+        element = element.nextSibling;
+      }
+      thisItem.classList.add('active');
+    })
+  }
+
+})();

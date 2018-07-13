@@ -36,9 +36,8 @@ body {
 }
 
 /** xx ZIndex **/
-.header__user-nav-dropdown {
-  z-index: 9999;
-}
+.header__user-nav-dropdown { z-index: 9999; }
+.regions-selector-list { z-index: 8888; }
 
 /** xx Icons **/
 
@@ -247,7 +246,8 @@ body {
   margin-left: 5px;
   margin-top: 3px;
 }
-.regions-selector-list {
+.regions-selector-list,
+.categories-selector-list {
   background-color: #f2f2f2;
   display: none;
   flex-wrap: wrap;
@@ -265,7 +265,8 @@ body {
 .regions-selector-list .container {
   flex-wrap: wrap;
 }
-.regions-selector-list h3 {
+.regions-selector-list h3,
+.categories-selector-list h3 {
   color: #2c154d;
   font-weight: 600;
   text-transform: uppercase;
@@ -310,8 +311,10 @@ body {
   color: #363636;
 }
 
-/* header bottom */
-.header__bottom nav {
+.header__bottom {
+  position: relative;
+}
+.header__bottom > nav {
   border-bottom: 1px solid #e7e7e7;
 }
 .header__bottom__nav {
@@ -321,9 +324,8 @@ body {
   font-weight: 500;
   justify-content: space-between;
   list-style: none;
-  padding: 10px 0;
 }
-.header__bottom__nav li {
+.header__bottom__nav > li {
   align-items: center;
   color: #2c154d;
   cursor: pointer;
@@ -342,4 +344,47 @@ body {
 .header__bottom__nav li a {
   color: #2c154d;
   text-decoration: none;
+}
+
+.toggle-category-selector {
+  padding: 10px 20px;
+}
+.toggle-category-selector.active {
+  background-color: #f2f2f2;
+}
+.toggle-category-selector .categories-selector-list {
+  display: none;
+}
+.toggle-category-selector.active .categories-selector-list {
+  display: block;
+}
+.categories-selector-list h3 {
+  margin-bottom: 20px;
+}
+.categories-selector-list nav {
+  display: flex;
+  justify-content: space-between;
+}
+.categories-selector-list nav ul {
+  list-style: none;
+  font-weight: 300;
+}
+.categories-selector-list nav ul li {
+  margin-bottom: 10px;
+  position: relative;
+}
+.categories-selector-list nav ul li:hover {
+  color: #9966cc;
+  font-weight: 500;
+}
+.categories-selector-list nav ul li:hover:after {
+  background-color: #9966cc; 
+  border-radius: 3px;
+  content: " ";
+  display: block;
+  height: 13px;
+  left: -10px;
+  position: absolute;
+  top: 2px;
+  width: 4px;
 }
