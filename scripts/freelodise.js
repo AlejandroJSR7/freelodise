@@ -23,3 +23,25 @@
     });
   });
 })();
+
+(function showCitySelector() {
+  let toggleSelector = document.querySelector('.js-toggle-region-selector');
+  let citySelector = document.querySelector('#js-regions-selector-list');
+
+  toggleSelector.onclick = function() {
+    citySelector.classList.toggle("active");
+    validateSelectorIcon();
+  };
+
+  function validateSelectorIcon() {
+    let toggleArrow = document.querySelector('.js-toggle-region-selector > i');
+    if(toggleArrow.classList.contains('icon--arrow-down')) {
+      toggleArrow.classList.remove('icon--arrow-down');
+      toggleArrow.classList.add('icon--arrow-up');
+    } else {
+      toggleArrow.classList.remove('icon--arrow-up');
+      toggleArrow.classList.add('icon--arrow-down');
+    }
+  }
+
+})();

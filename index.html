@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Freelodise</title>
   <link rel="stylesheet" href="styles/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,500,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500" rel="stylesheet">
   <link rel="stylesheet" href="styles/freelodise.css">
   <link rel="stylesheet" href="vendors/css/cd-dropdown/cd-dropdown.css">
@@ -38,52 +38,62 @@
               <li><a href="#">Cerrar sesión</a></li>
             </ul>
           </div>
-          <a href="javascript:void(0);" id="js-region-selector" class="region-selector">
+          <a href="javascript:void(0);" class="js-toggle-region-selector toggle-region-selector">
             Bogotá, Co
-            <i class="icon--arrow-up"></i>
+            <i class="icon--arrow-down"></i>
           </a>
+        </div>
+        <div id="js-regions-selector-list" class="regions-selector-list">
+          <div class="container">
+            <h3>Ciudades Disponibles</h3>
+            <nav>
+              <ul>
+                <li class="js-select-this-town select-this-town">Ibagué, Colombia</li>
+                <li class="js-select-this-town select-this-town active">Bogotá, Colombia</li>
+                <li class="js-select-this-town select-this-town">Cali, Colombia</li>
+                <li class="js-select-this-town select-this-town">Medellín, Colombia</li>
+                <li class="js-select-this-town select-this-town">Santa Marta, Colombia</li>
+                <li class="js-select-this-town select-this-town">Manizales, Colombia</li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
     <div class="header__bottom">
       <nav>
-        <ul class="header__bottom__nav">
-          <li>
-            <a href="#">
-              <i></i><span>Locación</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i></i><span>Entretenimiento</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i></i><span>Bienestar</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i></i><span>Educación</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i></i><span>Personal</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i></i><span>Negocios</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i></i><span>Más</span>
-            </a>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="header__bottom__nav">
+            <li>
+              <i class="icon--locacion"></i>
+              <span>Locación</span>
+            </li>
+            <li>
+              <i class="icon--entretenimiento"></i>
+              <span>Entretenimiento</span>
+            </li>
+            <li>
+              <i class="icon--bienestar"></i>
+              <span>Bienestar</span>
+            </li>
+            <li>
+              <i class="icon--educacion"></i>
+              <span>Educación</span>
+            </li>
+            <li>
+              <i class="icon--personal"></i>
+              <span>Personal</span>
+            </li>
+            <li>
+              <i class="icon--negocios"></i>
+              <span>Negocios</span>
+            </li>
+            <li>
+              <i class="icon--mas"></i>
+              <span>Más</span>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
