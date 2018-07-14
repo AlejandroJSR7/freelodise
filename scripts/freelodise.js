@@ -47,23 +47,35 @@
 })();
 
 (function showCategorySelector() {
-  let toggleMenuItems = document.querySelectorAll(".js-toggle-category-selector");
-  console.log("toggleMenuItems", toggleMenuItems);
-
+  let toggleMenuItems = document.querySelectorAll("[class^='js-categories-nav__item--']");
+  let categoriesNavs = document.querySelectorAll("[class^='js-nav-categories--'");
   for(var i = 0; i < toggleMenuItems.length; i++ ) {
     toggleMenuItems[i].addEventListener('click', function() {
       let thisItem = this;
       let element = toggleMenuItems[0];
-      console.log('element.tagName', element.tagName);
+      console.log('toggleMenuItems', toggleMenuItems);
+      removeSiblingsActiveClass(element);
 
-      while(element) {
-        if(element.tagName === 'LI') {
-          element.classList.remove('active');
-        }
-        element = element.nextSibling;
-      }
+      let dataAttrCategories = thisItem.getAttribute('data-open-categories');
+      let jsCategoriesSelector = document.querySelector('.js-categories-selector-list');
+      let elementThatWeShouldShow = '.js-nav-categories--' + dataAttrCategories;
+      jsCategoriesSelector.classList.add('active');
+
+      let categorieElement = categoriesNavs[0];
+      removeSiblingsActiveClass(categorieElement);
+
+      document.querySelector(elementThatWeShouldShow).classList.add('active');
       thisItem.classList.add('active');
     })
   }
 
 })();
+
+function removeSiblingsActiveClass(element) {
+  while(element) {
+    if(element.nodeType === 1) {
+      element.classList.remove('active');
+    }
+    element = element.nextSibling;
+  }
+}

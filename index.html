@@ -26,7 +26,7 @@
         <figure class="header__logo">
           <img src="images/design/misc/freelodise-logo.svg" alt="Freelodise Logo">
         </figure>
-        <div class="header__search">
+        <div class="box-search">
           <form action="#">
             <input type="search" placeholder="¿A quién estás búscando?" />
             <input type="submit" title="Buscar" value="" />
@@ -34,7 +34,7 @@
         </div>
         <div class="header__user-nav">
           <div id="js-header__user-nav-dropdown" class="header__user-nav-dropdown wrapper-dropdown-5" tabindex="1">
-            <i class="icon--user"></i>
+            <i class="icon-user"></i>
             <span>Hola <em>Juan Carlos</em></span>
             <ul class="dropdown">
               <li><a href="#">Mi Perfil</a></li>
@@ -45,7 +45,7 @@
           </div>
           <a href="javascript:void(0);" class="js-toggle-region-selector toggle-region-selector">
             Bogotá, Co
-            <i class="icon--arrow-down"></i>
+            <i class="icon-arrow-down"></i>
           </a>
         </div>
         <div id="js-regions-selector-list" class="regions-selector-list">
@@ -68,77 +68,33 @@
     <div class="header__bottom">
       <nav>
         <div class="container">
-          <ul class="header__bottom__nav">
-            <li class="js-toggle-category-selector toggle-category-selector">
-              <i class="icon--locacion"></i>
+          <ul class="categories-nav">
+            <li data-open-categories="locacion" class="js-categories-nav__item--locacion categories-nav__item">
+              <i class="icon-locacion"></i>
               <span>Locación</span>
-              <div class="js-categories-selector-list categories-selector-list">
-                <div class="container">
-                  <nav>
-                    <ul>
-                      <h3>Diseño</h3>
-                      <li><a href="javascript:void(0);">Branding</a></li>
-                      <li><a href="javascript:void(0);">Packaging</a></li>
-                      <li><a href="javascript:void(0);">Diseño editorial</a></li>
-                      <li><a href="javascript:void(0);">Diseño web</a></li>
-                      <li><a href="javascript:void(0);">Diseño de interiores</a></li>
-                      <li><a href="javascript:void(0);">Modelado 3D</a></li>
-                      <li><a href="javascript:void(0);">Diseño industrial</a></li>
-                    </ul>
-                    <ul>
-                      <h3>Audiovisual</h3>
-                      <li><a href="javascript:void(0);">Edición de Video</a></li>
-                      <li><a href="javascript:void(0);">Grabación de video</a></li>
-                      <li><a href="javascript:void(0);">Animación 2D</a></li>
-                      <li><a href="javascript:void(0);">Animación 3D</a></li>
-                      <li><a href="javascript:void(0);">Equípos fotográficos</a></li>
-                      <li><a href="javascript:void(0);">Edición de imagen</a></li>
-                      <li><a href="javascript:void(0);">Efectos especiales</a></li>
-                    </ul>
-                    <ul>
-                      <h3>Música</h3>
-                      <li><a href="javascript:void(0);">Cantantes</a></li>
-                      <li><a href="javascript:void(0);">Grupos musicales</a></li>
-                      <li><a href="javascript:void(0);">Instrumentos musicales</a></li>
-                      <li><a href="javascript:void(0);">Estudio de grabación</a></li>
-                      <li><a href="javascript:void(0);">Compositores</a></li>
-                      <li><a href="javascript:void(0);">Edición de audio</a></li>
-                    </ul>
-                    <ul>
-                      <h3>Eventos</h3>
-                      <li><a href="javascript:void(0);">Eventos empresariales</a></li>
-                      <li><a href="javascript:void(0);">Conferencias</a></li>
-                      <li><a href="javascript:void(0);">Fiestas</a></li>
-                      <li><a href="javascript:void(0);">Decoración</a></li>
-                      <li><a href="javascript:void(0);">Bufette</a></li>
-                      <li><a href="javascript:void(0);">Organización</a></li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
             </li>
-            <li class="js-toggle-category-selector toggle-category-selector">
-              <i class="icon--entretenimiento"></i>
+            <li data-open-categories="entretenimiento" class="js-categories-nav__item--entretenimiento categories-nav__item">
+              <i class="icon-entretenimiento"></i>
               <span>Entretenimiento</span>
             </li>
-            <li class="js-toggle-category-selector toggle-category-selector">
-              <i class="icon--bienestar"></i>
+            <li data-open-categories="bienestar" class="js-categories-nav__item--bienestar categories-nav__item">
+              <i class="icon-bienestar"></i>
               <span>Bienestar</span>
             </li>
-            <li class="js-toggle-category-selector toggle-category-selector">
-              <i class="icon--educacion"></i>
+            <li data-open-categories="educacion" class="js-categories-nav__item--educacion categories-nav__item">
+              <i class="icon-educacion"></i>
               <span>Educación</span>
             </li>
-            <li class="js-toggle-category-selector toggle-category-selector">
-              <i class="icon--personal"></i>
+            <li data-open-categories="personal" class="js-categories-nav__item--personal categories-nav__item">
+              <i class="icon-personal"></i>
               <span>Personal</span>
             </li>
-            <li class="js-toggle-category-selector toggle-category-selector">
-              <i class="icon--negocios"></i>
+            <li data-open-categories="negocios" class="js-categories-nav__item--negocios categories-nav__item">
+              <i class="icon-negocios"></i>
               <span>Negocios</span>
             </li>
-            <li class="js-toggle-category-selector toggle-category-selector">
-              <i class="icon--mas"></i>
+            <li data-open-categories="mas" class="js-categories-nav__item--mas categories-nav__item">
+              <i class="icon-mas"></i>
               <span>Más</span>
             </li>
           </ul>
@@ -146,6 +102,144 @@
       </nav>
     </div>
   </header>
+  <div class="categories-selector-wrap">
+    <div class="js-categories-selector-list categories-selector-list">
+      <div class="container">
+        <nav class="js-nav-categories--locacion">
+          <ul>
+            <h3>Locación</h3>
+            <li><a href="javascript:void(0);">Locación</a></li>
+            <li><a href="javascript:void(0);">Locación</a></li>
+            <li><a href="javascript:void(0);">Locación</a></li>
+            <li><a href="javascript:void(0);">Locación</a></li>
+            <li><a href="javascript:void(0);">Locación</a></li>
+            <li><a href="javascript:void(0);">Locación</a></li>
+            <li><a href="javascript:void(0);">Locación</a></li>
+          </ul>
+        </nav>
+        <nav class="js-nav-categories--entretenimiento">
+          <ul>
+            <h3>Diseño</h3>
+            <li><a href="javascript:void(0);">Branding</a></li>
+            <li><a href="javascript:void(0);">Packaging</a></li>
+            <li><a href="javascript:void(0);">Diseño editorial</a></li>
+            <li><a href="javascript:void(0);">Diseño web</a></li>
+            <li><a href="javascript:void(0);">Diseño de interiores</a></li>
+            <li><a href="javascript:void(0);">Modelado 3D</a></li>
+            <li><a href="javascript:void(0);">Diseño industrial</a></li>
+          </ul>
+          <ul>
+            <h3>Audiovisual</h3>
+            <li><a href="javascript:void(0);">Edición de Video</a></li>
+            <li><a href="javascript:void(0);">Grabación de video</a></li>
+            <li><a href="javascript:void(0);">Animación 2D</a></li>
+            <li><a href="javascript:void(0);">Animación 3D</a></li>
+            <li><a href="javascript:void(0);">Equípos fotográficos</a></li>
+            <li><a href="javascript:void(0);">Edición de imagen</a></li>
+            <li><a href="javascript:void(0);">Efectos especiales</a></li>
+          </ul>
+          <ul>
+            <h3>Música</h3>
+            <li><a href="javascript:void(0);">Cantantes</a></li>
+            <li><a href="javascript:void(0);">Grupos musicales</a></li>
+            <li><a href="javascript:void(0);">Instrumentos musicales</a></li>
+            <li><a href="javascript:void(0);">Estudio de grabación</a></li>
+            <li><a href="javascript:void(0);">Compositores</a></li>
+            <li><a href="javascript:void(0);">Edición de audio</a></li>
+          </ul>
+          <ul>
+            <h3>Eventos</h3>
+            <li><a href="javascript:void(0);">Eventos empresariales</a></li>
+            <li><a href="javascript:void(0);">Conferencias</a></li>
+            <li><a href="javascript:void(0);">Fiestas</a></li>
+            <li><a href="javascript:void(0);">Decoración</a></li>
+            <li><a href="javascript:void(0);">Bufette</a></li>
+            <li><a href="javascript:void(0);">Organización</a></li>
+          </ul>
+        </nav>
+        <nav class="js-nav-categories--bienestar">
+          <ul>
+            <h3>Bienestar</h3>
+            <li><a href="javascript:void(0);">Bienestar</a></li>
+            <li><a href="javascript:void(0);">Bienestar</a></li>
+            <li><a href="javascript:void(0);">Bienestar</a></li>
+            <li><a href="javascript:void(0);">Bienestar</a></li>
+            <li><a href="javascript:void(0);">Bienestar</a></li>
+            <li><a href="javascript:void(0);">Bienestar</a></li>
+            <li><a href="javascript:void(0);">Bienestar</a></li>
+          </ul>
+        </nav>
+        <nav class="js-nav-categories--educacion">
+          <ul>
+            <h3>Educación</h3>
+            <li><a href="javascript:void(0);">Educación</a></li>
+            <li><a href="javascript:void(0);">Educación</a></li>
+            <li><a href="javascript:void(0);">Educación</a></li>
+            <li><a href="javascript:void(0);">Educación</a></li>
+            <li><a href="javascript:void(0);">Educación</a></li>
+            <li><a href="javascript:void(0);">Educación</a></li>
+            <li><a href="javascript:void(0);">Educación</a></li>
+          </ul>
+        </nav>
+        <nav class="js-nav-categories--personal">
+          <ul>
+            <h3>Personal</h3>
+            <li><a href="javascript:void(0);">Personal</a></li>
+            <li><a href="javascript:void(0);">Personal</a></li>
+            <li><a href="javascript:void(0);">Personal</a></li>
+            <li><a href="javascript:void(0);">Personal</a></li>
+            <li><a href="javascript:void(0);">Personal</a></li>
+            <li><a href="javascript:void(0);">Personal</a></li>
+            <li><a href="javascript:void(0);">Personal</a></li>
+          </ul>
+        </nav>
+        <nav class="js-nav-categories--negocios">
+          <ul>
+            <h3>Negocios</h3>
+            <li><a href="javascript:void(0);">Negocios</a></li>
+            <li><a href="javascript:void(0);">Negocios</a></li>
+            <li><a href="javascript:void(0);">Negocios</a></li>
+            <li><a href="javascript:void(0);">Negocios</a></li>
+            <li><a href="javascript:void(0);">Negocios</a></li>
+            <li><a href="javascript:void(0);">Negocios</a></li>
+            <li><a href="javascript:void(0);">Negocios</a></li>
+          </ul>
+        </nav>
+        <nav class="js-nav-categories--mas">
+          <ul>
+            <h3>Más</h3>
+            <li><a href="javascript:void(0);">Más</a></li>
+            <li><a href="javascript:void(0);">Más</a></li>
+            <li><a href="javascript:void(0);">Más</a></li>
+            <li><a href="javascript:void(0);">Más</a></li>
+            <li><a href="javascript:void(0);">Más</a></li>
+            <li><a href="javascript:void(0);">Más</a></li>
+            <li><a href="javascript:void(0);">Más</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <section class="hero" style="background: url('images/design/bg/hero-background.png')">
+    <div class="hero__content">
+      <h1 class="hero__title">Lorem ipsum dolor sit amet</h1>
+      <p class="hero__description">elit ridiculus luctus erat, integer mus gravida.</p>
+      <div class="hero__search">
+        <div class="box-search">
+          <form action="#">
+            <input type="search" placeholder="¿A quién estás búscando?" />
+            <input type="submit" title="Buscar" value="" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="hero__footer">
+      <a href="#">
+        <i class="icon-play"></i>
+        Conoce cómo funciona FreeloDise
+      </a>
+    </div>
+  </section>
 
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script src="scripts/freelodise.js"></script>
