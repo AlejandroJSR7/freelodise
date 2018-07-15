@@ -10,6 +10,8 @@
   /** xx Section Steps **/
   /** xx Section Categories **/
   /** xx Section Offer your services **/
+  /** xx Footer **/
+  /** xx Newsletter **/
 
 /** xx Fonts **/
 
@@ -698,4 +700,44 @@ body {
 }
 .section-offer-your-services--shadow-dark:after {
   background-image: url('../images/design/bg/shadow-dark.png');
+}
+
+/** xx Footer **/
+
+footer {
+  padding: 30px 0 40px;
+}
+.footer__logo {
+  margin-bottom: 35px;
+}
+.footer__logo img {
+  width: 200px;
+}
+.footer_menus,
+.footer_menus nav {
+  display: flex;
+  justify-content: space-between;
+  width: 670px;
+}
+.footer_menus nav ul {
+  list-style: none;
+}
+.footer_menus nav ul h3 {
+  color: #2c154d;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.footer_menus nav ul li {
+  color: #5d5d5d;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.footer_menus nav ul li a {
+  color: #5d5d5d;
+  text-decoration: none;
+}
+/** xx Newsletter **/
+.newsletter {
+
 }
