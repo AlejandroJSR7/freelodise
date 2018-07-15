@@ -48,6 +48,7 @@ body {
 /** xx ZIndex **/
 .header__user-nav-dropdown { z-index: 9999; }
 .regions-selector-list { z-index: 8888; }
+.section-offer-your-services__content { z-index: 100; }
 
 /** xx Icons **/
 
@@ -674,10 +675,27 @@ body {
   line-height: 1;
   padding: 15px 50px 15px;
   text-decoration: none;
+  transition: all 0.5s ease;
+}
+.section-offer-your-services__link:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.section-offer-your-services--shadow-light:after,
+.section-offer-your-services--shadow-dark:after {
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
 .section-offer-your-services--shadow-light:after {
   background-image: url('../images/design/bg/shadow-light.png');
-  height: 100%;
-  position: absolute;
-  width: 100%;
+}
+.section-offer-your-services--shadow-dark:after {
+  background-image: url('../images/design/bg/shadow-dark.png');
 }
