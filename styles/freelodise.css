@@ -9,6 +9,7 @@
   /** xx Hero **/
   /** xx Section Steps **/
   /** xx Section Categories **/
+  /** xx Section Offer your services **/
 
 /** xx Fonts **/
 
@@ -634,4 +635,49 @@ body {
 }
 .category-info__location .icon-ubiety {
   margin-right: 5px;
+}
+
+/** xx Section Offer your services **/
+
+.section-offer-your-services {
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  min-height: 560px;
+  padding-bottom: 35px;
+  padding-top: 35px;
+  position: relative;
+}
+.section-offer-your-services__content {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: 600px;
+}
+.section-offer-your-services__title {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.section-offer-your-services__link {
+  border-radius: 3px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  padding: 15px 50px 15px;
+  text-decoration: none;
+}
+.section-offer-your-services--shadow-light:after {
+  background-image: url('../images/design/bg/shadow-light.png');
+  height: 100%;
+  position: absolute;
+  width: 100%;
 }
