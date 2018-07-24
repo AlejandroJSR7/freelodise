@@ -6,5 +6,9 @@
   "repository": "git@github.com:AlejandroJSR7/freelodise.git",
   "author": "AlejandroJSR7 <AlejandroJSR7@Gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1"
+  }
 }
