@@ -53,3 +53,18 @@
   height: 14px;
   width: 9px;
 }
+.icon-facebook {
+  background-image: url('../../images/design/icons/icon-facebook.svg');
+  height: 17px;
+  width: 9px;
+}
+.icon-instagram {
+  background-image: url('../../images/design/icons/icon-instagram.svg');
+  height: 17px;
+  width: 17px;
+}
+.icon-message {
+  background-image: url('../../images/design/icons/icon-message.svg');
+  height: 13px;
+  width: 18.5px;
+}

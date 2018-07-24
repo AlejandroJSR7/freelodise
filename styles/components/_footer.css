@@ -1,14 +1,13 @@
 /* components/_footer */
 
-footer {
-  padding: 30px 20px 40px;
-}
+footer {}
 footer .container {
   background-color: rgba(255, 0, 0, 0.5);
   overflow: auto;
+  padding: 30px 20px 40px;
 }
 @media screen and (min-width: 992px) {
-  footer {
+  footer .container {
     padding-left: 0;
     padding-right: 0;
   }

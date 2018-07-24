@@ -15,6 +15,7 @@
     @import url("styles/base/_helpers.css");
     @import url("styles/base/_z-index.css");
     @import url("styles/base/_icons.css");
+    @import url("styles/base/_buttons.css");
     
     @import url("styles/components/_search-box.css");
     @import url("styles/components/_header.css");
@@ -32,7 +33,6 @@
   <noscript><link rel="stylesheet" href="vendors/css/cd-dropdown/noJS.css"></noscript>
 </head>
 <body>
-  complete...
   <header class="d-none">
     <div class="header__top">
       <div class="container">
@@ -343,7 +343,7 @@
       <a class="section-offer-your-services__link" href="javascript:void(0);">Ofrece tus servicios</a>
     </div>
   </section>
-  <footer class="d-none">
+  <footer class="">
     <div class="container">
       <figure class="footer__logo">
         <img src="images/design/misc/freelodise-logo2.svg" alt="" />
@@ -408,6 +408,25 @@
             </li>
           </ul>
         </nav>
+      </div>
+      <div class="footer_newsletter newsletter">
+        <h3 class="newsletter__title">Suscríbete a <br> nuestro newsletter</h3>
+        <div class="newsletter__input">
+          <input type="text" placeholder="Correo electrónico">
+          <input type="submit" value="">
+        </div>
+        <div class="newsletter__buttons">
+          <a href="javascript:;" class="btn btn--white btn--facebook">
+            <i class="icon-facebook"></i>
+          </a>
+          <a href="javascript:;" class="btn btn--white btn--instagram">
+            <i class="icon-instagram"></i>
+          </a>
+          <a href="javascript:;" class="btn btn--contact">
+            Contáctanos
+            <i class="icon-message"></i>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
