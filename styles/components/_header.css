@@ -53,7 +53,7 @@
 .box-search input[type="submit"],
 .box-search button {
   background-color: #9966cc;
-  background-image: url("../images/design/icons/icon-search.svg");
+  background-image: url("../../images/design/icons/icon-search.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 18px 18px;
