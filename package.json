@@ -1,0 +1,10 @@
+{
+  "name": "Freelodise",
+  "version": "1.0.0",
+  "description": "Freelodise",
+  "main": "index.js",
+  "repository": "git@github.com:AlejandroJSR7/freelodise.git",
+  "author": "AlejandroJSR7 <AlejandroJSR7@Gmail.com>",
+  "license": "MIT",
+  "private": true
+}
