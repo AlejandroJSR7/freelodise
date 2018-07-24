@@ -1,0 +1,32 @@
+/* components/_copyright */
+
+.copyright .container {
+  padding: 0;
+}
+.copyright a {
+  border-top: 1px solid #d7d7d7;
+  color: #000000;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  opacity: 0.75;
+  padding: 40px 0 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+.copyright a:hover {
+  opacity: 1;
+}
+.copyright span {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.copyright figure {
+  margin: 0 auto;
+  width: 170px;
+}
+.copyright figure img {
+  max-width: 100%;
+}
