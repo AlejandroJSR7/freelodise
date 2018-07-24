@@ -4,7 +4,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  display: inline-flex;
+  display: inline-block;
 }
 .icon-locacion { background-image: url('../../images/design/icons/navigation/icon-locacion.svg'); }
 .icon-entretenimiento { background-image: url('../../images/design/icons/navigation/icon-entretenimiento.svg'); }
