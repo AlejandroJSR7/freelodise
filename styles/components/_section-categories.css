@@ -1,0 +1,95 @@
+/* components/_section-categories */
+
+.section-categories {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.section-categories h3 {
+  color: #2c154d;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.categories-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "category_img_a category_img_b category_img_b"
+                       "category_img_a category_img_c category_img_d"
+  ;
+  grid-template-columns: calc(50% - 10px) calc(25% - 10px) calc(25% - 20px) 25%;
+}
+.category-elm {
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.category-elm--a {
+  background-color: #F44336;
+  grid-area: category_img_a;
+  height: 495px;
+} 
+.category-elm--b {
+  background-color: #2196F3;
+  grid-area: category_img_b;
+}
+.category-elm--c {
+  background-color: #8BC34A;
+  grid-area: category_img_c;
+}
+.category-elm--d {
+  background-color: #00BCD4;
+  grid-area: category_img_d;
+}
+.category-type {
+  align-items: center;
+  background-color: #fafafa;
+  box-shadow: 3px 3px 5px -2px #898a83;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  position: absolute;
+  right: 15px;
+  top: -14px;
+  width: 60px;
+}
+.category-type .icon-bienestar {
+  height: 20px;
+  width: 36px;
+}
+.category-type:after {
+  background-image: url(../images/design/bg/sqare-shadow.png);
+  background-position: center center;
+  background-size: contain;
+  content: "";
+  height: 14px;
+  position: absolute;
+  right: -7px;
+  top: 0;
+  width: 7px;
+}
+.category-info {
+  background-color: #9966cc;
+  bottom: 10px;
+  color: #ffffff;
+  display: inline-block;
+  left: 0;
+  line-height: 1;
+  padding: 7px 15px;
+  position: absolute;
+}
+.category-info h4.category-info__name {
+  font-weight: 700;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+.category-info__location {
+  align-items: center;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: space-between;
+  line-height: 1em;
+}
+.category-info__location .icon-ubiety {
+  margin-right: 5px;
+}

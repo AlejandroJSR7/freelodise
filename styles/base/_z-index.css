@@ -1,0 +1,5 @@
+/* base/_z-index */
+
+.header__user-nav-dropdown { z-index: 9999; }
+.regions-selector-list { z-index: 8888; }
+.section-offer-your-services__content { z-index: 100; }

@@ -1,0 +1,10 @@
+/* base/_helpers */
+
+.d-none, .display-none, .none, .hidden, .hidde {
+  display: none !important;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1035px;
+}
