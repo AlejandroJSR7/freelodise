@@ -1,7 +1,17 @@
 /* components/_footer */
 
 footer {
-  padding: 30px 0 40px;
+  padding: 30px 20px 40px;
+}
+footer .container {
+  background-color: rgba(255, 0, 0, 0.5);
+  overflow: auto;
+}
+@media screen and (min-width: 992px) {
+  footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .footer__logo {
   margin-bottom: 35px;
@@ -9,14 +19,32 @@ footer {
 .footer__logo img {
   width: 200px;
 }
-.footer_menus,
+.footer_menus {
+  display: block;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .footer_menus {
+    float: left;
+    width: 670px;
+  }
+}
 .footer_menus nav {
-  display: flex;
-  justify-content: space-between;
-  width: 670px;
+  display: block;
 }
 .footer_menus nav ul {
+  display: block;
   list-style: none;
+  margin-bottom: 30px;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .footer_menus nav ul {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: top;
+    width: 33%;
+  }
 }
 .footer_menus nav ul h3 {
   color: #2c154d;
