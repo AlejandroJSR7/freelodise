@@ -1,8 +1,12 @@
 /* components/_section-categories */
 
 .section-categories {
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding: 20px 15px;
+}
+@media screen and (min-width: 768px) {
+  .section-categories {
+    padding: 50px 0;
+  }
 }
 .section-categories h3 {
   color: #2c154d;
@@ -10,50 +14,78 @@
   font-weight: 600;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 768px) {}
 .categories-grid {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas: "category_img_a category_img_b category_img_b"
-                       "category_img_a category_img_c category_img_d"
-  ;
-  grid-template-columns: calc(50% - 10px) calc(25% - 10px) calc(25% - 20px) 25%;
+  display: block;
+  position: relative;
 }
 .category-elm {
   background-position: center center;
   background-size: cover;
+  height: 260px;
+  margin-bottom: 30px;
   position: relative;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .category-elm {
+    height: 238px;
+    margin: 0;
+    width: calc(50% - 10px);
+  }
 }
 .category-elm--a {
   background-color: #F44336;
-  grid-area: category_img_a;
   height: 495px;
 } 
 .category-elm--b {
   background-color: #2196F3;
-  grid-area: category_img_b;
 }
 .category-elm--c {
   background-color: #8BC34A;
-  grid-area: category_img_c;
 }
 .category-elm--d {
   background-color: #00BCD4;
-  grid-area: category_img_d;
+} 
+@media screen and (min-width: 768px) {
+  .category-elm--a {
+    float: left;
+    height: 496px;
+    margin-right: 20px;
+    width: calc(50% - 10px);
+  } 
+  .category-elm--b {
+    float: right;
+    margin-bottom: 20px;
+  }
+  .category-elm--c,
+  .category-elm--d {
+    height: 238px;
+    width: calc(25% - 20px);
+  }
+  .category-elm--c {
+    float: left;
+  }
+  .category-elm--d {
+    float: right;
+  } 
 }
 .category-type {
-  align-items: center;
   background-color: #fafafa;
   box-shadow: 3px 3px 5px -2px #898a83;
-  display: flex;
   height: 60px;
-  justify-content: center;
   position: absolute;
   right: 15px;
+  text-align: center;
   top: -14px;
   width: 60px;
 }
 .category-type .icon-bienestar {
   height: 20px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 36px;
 }
 .category-type:after {
@@ -83,13 +115,11 @@
   text-transform: uppercase;
 }
 .category-info__location {
-  align-items: center;
-  display: inline-flex;
   font-size: 14px;
   font-weight: 500;
-  justify-content: space-between;
   line-height: 1em;
 }
 .category-info__location .icon-ubiety {
   margin-right: 5px;
+  vertical-align: middle;
 }
