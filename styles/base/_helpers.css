@@ -4,6 +4,13 @@
   display: none !important;
 }
 
+.cfx:after, .clear:after, .clearfix:after {
+  clear: both;
+  content: "";
+  display: block;
+  width: 100%;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
