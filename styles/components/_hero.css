@@ -1,67 +1,96 @@
 /* components/_hero */
 
 .hero {
-  align-items: center;
   background-image: url('../images/design/bg/hero-background.png');
-  display: flex;
-  flex-wrap: wrap;
-  height: calc(100vh - 134px);
-  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  height: calc(100vh - 120px);
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    height: calc(100vh - 134px);
+  }
 }
 .hero__content {
-  align-items: flex-end;
-  display: flex;
-  flex-basis: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: inline-block;
+  left: 50%;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
 }
 .hero__title,
 .hero__description {
   color: #ffffff;
   flex-basis: 100%;
-  font-size: 30px;
   margin: 0;
   text-align: center;
 }
 .hero__title {
+  font-size: 25px;
   font-weight: 500;
   margin-bottom: 5px;
 }
 .hero__description {
+  font-size: 20px;
   font-weight: 300;
   margin-bottom: 25px;
 }
-.hero__search .box-search input[type="search"] {
+@media screen and (min-width: 768px) {
+  .hero__title,
+  .hero__description {
+    font-size: 30px;
+  }
+}
+.hero__search .box-search {
+  position: relative;
+}
+.hero__search .box-search input[type="search"],
+.hero__search .box-search {
   font-size: 16px;
   height: 50px;
-  width: 525px;
+  width: 100%;
 }
-
+.hero__search .box-search input[type="search"] {
+  position: absolute;
+  left: 0;
+  width: calc(100% - 50px);
+}
 .hero__search .box-search input[type="button"],
 .hero__search .box-search input[type="submit"],
 .hero__search .box-search button {
+  background-size: 21px 21px;
   height: 50px;
   width: 50px;
-  background-size: 21px 21px;
 }
 
 .hero__footer {
-  align-items: center;
   color: #ffffff;
-  display: flex;
-  flex-basis: 100%;
+  display: block;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 16px;
   font-weight: 500;
-  justify-content: center;
-  align-self: flex-end;
   padding: 10px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
 }
 .hero__footer a {
-  align-items: center;
   color: #ffffff;
-  display: grid;
-  grid-gap: 5px;
-  grid-template-columns: 24px auto;
+  display: inline-block;
+  text-align: center;
   text-decoration: none;
+  vertical-align: center;
+}
+.hero__footer a i {margin-right: 5px;}
+.hero__footer a i,
+.hero__footer a span {
+  line-height: 1;
+  vertical-align: middle;
 }

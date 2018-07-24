@@ -5,19 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Freelodise</title>
-  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/vendors/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,500,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500" rel="stylesheet">
 
-  <!-- <link rel="stylesheet" href="styles/freelodise.css"> -->
   <style>
-    @import url("styles/vendors/normalize.css");
     @import url("styles/base/_base.css");
     @import url("styles/base/_global.css");
     @import url("styles/base/_helpers.css");
     @import url("styles/base/_z-index.css");
     @import url("styles/base/_icons.css");
-
+    
+    @import url("styles/components/_search-box.css");
     @import url("styles/components/_header.css");
     @import url("styles/components/_hero.css");
     @import url("styles/components/_section-categories.css");
@@ -33,7 +32,7 @@
   <noscript><link rel="stylesheet" href="vendors/css/cd-dropdown/noJS.css"></noscript>
 </head>
 <body>
-  <header class="">
+  <header class="d-none">
     <div class="header__top">
       <div class="container">
         <figure class="header__logo">
@@ -115,7 +114,7 @@
       </nav>
     </div>
   </header>
-  <div class="categories-selector-wrap">
+  <div class="d-none categories-selector-wrap">
     <div class="js-categories-selector-list categories-selector-list">
       <div class="container">
         <nav class="js-nav-categories--locacion">
@@ -239,7 +238,7 @@
       <p class="hero__description">elit ridiculus luctus erat, integer mus gravida.</p>
       <div class="hero__search">
         <div class="box-search">
-          <form action="#">
+          <form action="#" class="cfx">
             <input type="search" placeholder="¿A quién estás búscando?" />
             <input type="submit" title="Buscar" value="" />
           </form>
@@ -249,11 +248,11 @@
     <div class="hero__footer">
       <a href="#">
         <i class="icon-play"></i>
-        Conoce cómo funciona FreeloDise
+        <span>Conoce cómo funciona FreeloDise</span>
       </a>
     </div>
   </section>
-  <section class="section-steps">
+  <section class="d-none section-steps">
     <div class="container">
       <div class="section-steps__step">
         <i class="icon-buscalo"></i>
@@ -274,7 +273,7 @@
       </div>
     </div>
   </section>
-  <section class="section-categories">
+  <section class="d-none section-categories">
     <div class="container">
       <h3>Categorías recomendadas</h3>
       <div class="categories-grid">
@@ -337,13 +336,13 @@
       </div>
     </div>
   </section>
-  <section class="section-offer-your-services section-offer-your-services--shadow-light section-offer-your-services--shadow-dark" style="background-image: url('images/content/section-offer-your-services.jpg')">
+  <section class="d-none section-offer-your-services section-offer-your-services--shadow-light section-offer-your-services--shadow-dark" style="background-image: url('images/content/section-offer-your-services.jpg')">
     <div class="section-offer-your-services__content">
       <h3 class="section-offer-your-services__title">“Mus ultrices quam class consequat dignissim a justo habitant litora, congue massa augue facilisi curabitur”</h3>
       <a class="section-offer-your-services__link" href="javascript:void(0);">Ofrece tus servicios</a>
     </div>
   </section>
-  <footer>
+  <footer class="d-none">
     <div class="container">
       <figure class="footer__logo">
         <img src="images/design/misc/freelodise-logo2.svg" alt="" />

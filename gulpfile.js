@@ -20,6 +20,6 @@ gulp.task('browser-sync', _task_browserSync);
   }
 
   function _task_Watch() {
-    gulp.watch("./styles/**/*.css", browserSync.reload);
+    gulp.watch("./styles/**/**/*.css", browserSync.reload);
     gulp.watch("./*.html").on('change', browserSync.reload);
   }
