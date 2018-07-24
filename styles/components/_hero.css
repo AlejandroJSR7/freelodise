@@ -50,6 +50,17 @@
 .hero__search .box-search {
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .hero__search .box-search {
+    margin: 0 auto;
+    max-width: 560px;
+  } 
+}
+@media screen and (min-width: 992px) {
+  .hero__search .box-search {
+    max-width: 60%;
+  } 
+}
 .hero__search .box-search input[type="search"],
 .hero__search .box-search {
   font-size: 16px;
