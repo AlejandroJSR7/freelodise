@@ -1,0 +1,74 @@
+.accordion-filter__title {
+  background-color: #eaeaea;
+  color: #2c154d;
+  padding: 10px;
+  text-align: center;
+}
+.accordion-filter__title .icon {
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 20px;
+}
+.accordion-filter__title span {
+  vertical-align: middle;
+}
+.accordion-filter {
+  background-color: #f2f2f2;
+  box-shadow: 0px 5px 16px -10px #000000;
+  padding: 5px 20px;
+}
+.accordion-filter h3 {
+  color: #9966cc;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1em;
+  padding: 10px 0;
+  position: relative;
+  text-transform: uppercase;
+}
+.accordion-filter h3:after {
+  background-image: url('../../images/design/icons/icon-accordion-arrow--down.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 8px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+}
+.accordion-filter h3.ui-accordion-header-active:after {
+  background-image: url('../../images/design/icons/icon-accordion-arrow--top.svg');
+}
+.accordion-filter h3:not(.ui-accordion-header-active) {
+  cursor: pointer;
+}
+.accordion-filter h3:not(:last-of-type) {
+  border-bottom: 1px solid #d4d4d4;
+}
+.accordion-filter ul {
+  font-size: 16px;
+  font-weight: 300;
+  list-style: none;
+  padding-top: 0;
+}
+.accordion-filter ul li {
+  line-height: 1;
+}
+.accordion-filter a {
+  color: #363636;
+  cursor: pointer;
+  display: block;
+  line-height: 1;
+  padding: 5px 0 5px 15px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.accordion-filter a:hover {
+  color: #9966cc;
+  font-weight: 400;
+}

@@ -105,3 +105,10 @@
   line-height: 1;
   vertical-align: middle;
 }
+
+.hero--internal {
+  height: 50vh;
+}
+.hero--internal .hero__title {
+  text-transform: uppercase;
+}

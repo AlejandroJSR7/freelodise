@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="8px" viewBox="0 0 16 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-arrow--right copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-583.000000, -168.000000)" fill="#9D6DCE" fill-rule="nonzero" id="icon-arrow--right-copy">
+            <g transform="translate(591.000000, 172.000000) rotate(-180.000000) translate(-591.000000, -172.000000) translate(584.000000, 168.000000)">
+                <path d="M4.19554849,11.1631373 C4.1060056,11.2631234 3.98154261,11.3198368 3.85129836,11.32 C3.72105411,11.3198368 3.59659112,11.2631234 3.50704822,11.1631373 C3.41571193,11.0666392 3.36439517,10.9357252 3.36439517,10.7992157 C3.36439517,10.6627062 3.41571193,10.5317922 3.50704822,10.4352941 L9.56110228,4.03529412 L3.51298357,-2.36470588 C3.32122048,-2.56396156 3.31856313,-2.88982803 3.50704823,-3.09254901 C3.69553333,-3.29527 4.00378539,-3.2980792 4.19554849,-3.09882353 L10.5938527,3.67137255 C10.685189,3.76787064 10.7365057,3.8987846 10.7365057,4.03529412 C10.7365057,4.17180363 10.685189,4.3027176 10.5938527,4.39921569 L4.19554849,11.1631373 Z" id="Shape" transform="translate(7.050450, 4.036777) rotate(-90.000000) translate(-7.050450, -4.036777) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

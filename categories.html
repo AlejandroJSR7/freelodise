@@ -27,6 +27,7 @@
     @import url("styles/components/_footer.css");
     @import url("styles/components/_newsletter.css");
     @import url("styles/components/_copyright.css");
+    @import url("styles/components/_accordions.css");
   </style>
   <link rel="stylesheet" href="vendors/css/cd-dropdown/cd-dropdown.css">
 
@@ -116,7 +117,7 @@
       </nav>
     </div>
   </header>
-  <div class=" categories-selector-wrap">
+  <div class="categories-selector-wrap">
     <div class="js-categories-selector-list categories-selector-list">
       <div class="container">
         <nav class="js-nav-categories--locacion">
@@ -234,114 +235,98 @@
       </div>
     </div>
   </div>
-  <section class=" hero done" style="background-image: url('images/design/bg/hero-background.png')">
+  <section class="hero hero--internal" style="background-image: url('images/design/bg/hero--internal.png')">
     <div class="hero__content">
-      <h1 class="hero__title">Lorem ipsum dolor sit amet</h1>
-      <p class="hero__description">elit ridiculus luctus erat, integer mus gravida.</p>
-      <div class="hero__search">
-        <div class="box-search">
-          <form action="#" class="cfx">
-            <input type="search" placeholder="¿A quién estás búscando?" />
-            <input type="submit" title="Buscar" value="" />
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="hero__footer">
-      <a href="#">
-        <i class="icon-play"></i>
-        <span>Conoce cómo funciona FreeloDise</span>
-      </a>
+      <h1 class="hero__title">Entretenimiento</h1>
+      <p class="hero__description">Elit ridiculus luctus erat, integer mus gravida.</p>
     </div>
   </section>
-  <section class=" section-steps done">
-    <div class="container">
-      <div class="section-steps__step">
-        <i class="icon-buscalo"></i>
-        <h4>Búscalo</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit nostra nunc vehicula dui, fringilla tellus conubia varius. </p>
-      </div>
-      <i class="icon-separator"></i>
-      <div class="section-steps__step">
-        <i class="icon-comparalo"></i>
-        <h4>Compáralo</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit nostra nunc vehicula dui, fringilla tellus conubia varius. </p>
-      </div>
-      <i class="icon-separator"></i>
-      <div class="section-steps__step">
-        <i class="icon-contratalo"></i>
-        <h4>Contrátalo</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit nostra nunc vehicula dui, fringilla tellus conubia varius. </p>
-      </div>
-    </div>
-  </section>
-  <section class=" section-categories done">
-    <div class="container">
-      <h3>Categorías recomendadas</h3>
-      <div class="categories-grid cfx">
-        <div style="background-image: url('images/content/categories/Layer-1209.jpg')" class="category-elm category-elm--a">
-          <div class="category-type">
-            <i class="icon-bienestar"></i>
+  <section class="main">
+    <div class="container cfx">
+      <div class="left-column column">
+        <div class="accordion-filter-wrapper">
+          <div class="accordion-filter__title">
+            <i class="icon icon-entretenimiento"></i>
+            <span>Entretenimiento</span>
           </div>
-          <div class="category-info">
-            <h4 class="category-info__name">
-              Bienestar
-            </h4>
-            <span class="category-info__location">
-              <i class="icon-ubiety"></i>
-              Cerca de tí
-            </span>
-          </div>
-        </div>
-        <div style="background-image: url('images/content/categories/Layer-1210.jpg')" class="category-elm category-elm--b">
-          <div class="category-type">
-            <i class="icon-bienestar"></i>
-          </div>
-          <div class="category-info">
-            <h4 class="category-info__name">
-              Bienestar
-            </h4>
-            <span class="category-info__location">
-              <i class="icon-ubiety"></i>
-              Cerca de tí
-            </span>
-          </div>
-        </div>
-        <div style="background-image: url('images/content/categories/Layer-1211.jpg')" class="category-elm category-elm--c">
-          <div class="category-type">
-            <i class="icon-bienestar"></i>
-          </div>
-          <div class="category-info">
-            <h4 class="category-info__name">
-              Bienestar
-            </h4>
-            <span class="category-info__location">
-              <i class="icon-ubiety"></i>
-              Cerca de tí
-            </span>
-          </div>
-        </div>
-        <div style="background-image: url('images/content/categories/Layer-1212.jpg')" class="category-elm category-elm--d">
-          <div class="category-type">
-            <i class="icon-bienestar"></i>
-          </div>
-          <div class="category-info">
-            <h4 class="category-info__name">
-              Bienestar
-            </h4>
-            <span class="category-info__location">
-              <i class="icon-ubiety"></i>
-              Cerca de tí
-            </span>
+          <div id="accordion-entertainment" class="accordion-filter">
+            <h3>Diseño</h3>
+            <div>
+              <ul>
+                <li><a href="javascript:;">Branding</a></li>
+                <li><a href="javascript:;">Packaging</a></li>
+                <li><a href="javascript:;">Diseño editorial</a></li>
+                <li><a href="javascript:;">Diseño web</a></li>
+                <li><a href="javascript:;">Diseño de interiores</a></li>
+                <li><a href="javascript:;">Modelado 3D</a></li>
+                <li><a href="javascript:;">Diseño industrial</a></li>
+              </ul>
+            </div>
+            <h3>Audiovisual</h3>
+            <div>
+              <ul>
+                <li><a href="javascript:;">Item 01</a></li>
+                <li><a href="javascript:;">Item 02</a></li>
+                <li><a href="javascript:;">Item 03</a></li>
+              </ul>
+            </div>
+            <h3>Música</h3>
+            <div>
+              <ul>
+                <li><a href="javascript:;">Item 01</a></li>
+                <li><a href="javascript:;">Item 02</a></li>
+                <li><a href="javascript:;">Item 03</a></li>
+                <li><a href="javascript:;">Item 04</a></li>
+                <li><a href="javascript:;">Item 05</a></li>
+                <li><a href="javascript:;">Item 06</a></li>
+                <li><a href="javascript:;">Item 07</a></li>
+              </ul>
+            </div>
+            <h3>Eventos</h3>
+            <div>
+              <ul>
+                <li><a href="javascript:;">Item 01</a></li>
+                <li><a href="javascript:;">Item 02</a></li>
+                <li><a href="javascript:;">Item 03</a></li>
+                <li><a href="javascript:;">Item 04</a></li>
+                <li><a href="javascript:;">Item 05</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class=" done section-offer-your-services section-offer-your-services--shadow-light section-offer-your-services--shadow-dark" style="background-image: url('images/content/section-offer-your-services.jpg')">
-    <div class="section-offer-your-services__content">
-      <h3 class="section-offer-your-services__title">“Mus ultrices quam class consequat dignissim a justo habitant litora, congue massa augue facilisi curabitur”</h3>
-      <a class="section-offer-your-services__link" href="javascript:void(0);">Ofrece tus servicios</a>
+      <div class="right-column-main column">
+        <div class="categories-grid categories-grid--2 cfx">
+          <div style="background-image: url('images/content/categories/Layer-1209.jpg')" class="category-elm--selected category-elm category-elm--a">
+            <div class="category-info">
+              <h4 class="category-info__name">
+                Diseño
+              </h4>
+            </div>
+          </div>
+          <div style="background-image: url('images/content/categories/Layer-1210.jpg')" class="category-elm category-elm--b">
+            <div class="category-info">
+              <h4 class="category-info__name">
+                AudioVisual
+              </h4>
+            </div>
+          </div>
+          <div style="background-image: url('images/content/categories/Layer-1211.jpg')" class="category-elm category-elm--c">
+            <div class="category-info">
+              <h4 class="category-info__name">
+                Música
+              </h4>
+            </div>
+          </div>
+          <div style="background-image: url('images/content/categories/Layer-1212.jpg')" class="category-elm category-elm--d">
+            <div class="category-info">
+              <h4 class="category-info__name">
+                Eventos
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <footer class="done">
@@ -442,6 +427,7 @@
     </div>
   </footer>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="scripts/freelodise.js"></script>
 </body>
 </html>

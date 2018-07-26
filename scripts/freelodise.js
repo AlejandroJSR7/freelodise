@@ -79,3 +79,9 @@ function removeSiblingsActiveClass(element) {
     element = element.nextSibling;
   }
 }
+
+$(document).ready(function () {
+  $( "#accordion-entertainment" ).accordion({
+    heightStyle: "content" 
+  });
+});
