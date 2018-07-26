@@ -112,3 +112,16 @@
 .hero--internal .hero__title {
   text-transform: uppercase;
 }
+.hero--internal--no-img {
+  height: 160px;;
+}
+.hero--internal--no-img .hero__title {
+  color: #2c154d;
+  font-size: 30px;
+  font-weight: 500;
+}
+.hero--internal--no-img .hero__description {
+  color: #a0a0a0;
+  font-weight: 100;
+  font-size: 30px;
+}

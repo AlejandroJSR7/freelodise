@@ -24,10 +24,10 @@
   }
   .left-column {
     float: left;
-    width: calc(25% - 20px);
+    width: 300px;
   }
   .right-column-main {
     float: right;
-    width: calc(75% - 20px);
+    width: 720px;
   }
 }

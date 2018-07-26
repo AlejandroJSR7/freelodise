@@ -28,6 +28,9 @@
     @import url("styles/components/_newsletter.css");
     @import url("styles/components/_copyright.css");
     @import url("styles/components/_accordions.css");
+    @import url("styles/components/_breadcrumb.css");
+    @import url("styles/components/_sidebars.css");
+    @import url("styles/components/_forms.css");
   </style>
   <link rel="stylesheet" href="vendors/css/cd-dropdown/cd-dropdown.css">
 
@@ -235,99 +238,76 @@
       </div>
     </div>
   </div>
-  <section class="hero hero--internal" style="background-image: url('images/design/bg/hero--internal.png')">
+  <section class="hero hero--internal hero--internal--no-img">
     <div class="hero__content">
-      <h1 class="hero__title">Entretenimiento</h1>
-      <p class="hero__description">Elit ridiculus luctus erat, integer mus gravida.</p>
+      <h1 class="hero__title">Branding,</h1>
+      <p class="hero__description">elit ridiculus luctus erat, integer mus gravida.</p>
+      <div class="container"><hr></div>
     </div>
   </section>
   <section class="main">
     <div class="container cfx">
       <div class="left-column column">
+        <ul class="breadcrumb">
+          <li><a href="javascript:;">Entretenimiento</a></li>
+          <li><a href="javascript:;">Diseño</a></li>
+          <li class="breadcrumb__current">Branding</li>
+        </ul>
         <div class="sidebar">
           <div class="sidebar__wrapper">
-            <div class="accordion-filter__title">
-              <i class="icon icon-entretenimiento"></i>
-              <span>Entretenimiento</span>
-            </div>
-            <div id="accordion-entertainment" class="accordion-filter">
-              <h3>Diseño</h3>
-              <div>
-                <ul>
-                  <li><a href="javascript:;">Branding</a></li>
-                  <li><a href="javascript:;">Packaging</a></li>
-                  <li><a href="javascript:;">Diseño editorial</a></li>
-                  <li><a href="javascript:;">Diseño web</a></li>
-                  <li><a href="javascript:;">Diseño de interiores</a></li>
-                  <li><a href="javascript:;">Modelado 3D</a></li>
-                  <li><a href="javascript:;">Diseño industrial</a></li>
-                </ul>
-              </div>
-              <h3>Audiovisual</h3>
-              <div>
-                <ul>
-                  <li><a href="javascript:;">Item 01</a></li>
-                  <li><a href="javascript:;">Item 02</a></li>
-                  <li><a href="javascript:;">Item 03</a></li>
-                </ul>
-              </div>
-              <h3>Música</h3>
-              <div>
-                <ul>
-                  <li><a href="javascript:;">Item 01</a></li>
-                  <li><a href="javascript:;">Item 02</a></li>
-                  <li><a href="javascript:;">Item 03</a></li>
-                  <li><a href="javascript:;">Item 04</a></li>
-                  <li><a href="javascript:;">Item 05</a></li>
-                  <li><a href="javascript:;">Item 06</a></li>
-                  <li><a href="javascript:;">Item 07</a></li>
-                </ul>
-              </div>
-              <h3>Eventos</h3>
-              <div>
-                <ul>
-                  <li><a href="javascript:;">Item 01</a></li>
-                  <li><a href="javascript:;">Item 02</a></li>
-                  <li><a href="javascript:;">Item 03</a></li>
-                  <li><a href="javascript:;">Item 04</a></li>
-                  <li><a href="javascript:;">Item 05</a></li>
-                </ul>
-              </div>
-            </div>
+            <h3 class="siderbar-filter__title">Branding</h3>
+            <div class="siderbar-filter">
+                <div class="form__field">
+                  <label class="custom-select" for="selectCity">
+                    <select name="selectCity" id="selectCity">
+                      <option value="col_bogota">Bogotá - Colombia</option>
+                      <option value="col_medellin">Medellín - Colombia</option>
+                      <option value="col_pereira">Pereira - Colombia</option>
+                      <option value="col_sibate">Sibaté - Colombia</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="form__field">
+                  <label class="custom-select" for="selectOrder">
+                    <select name="selectOrder" id="selectOrder">
+                      <option value="">Ordenar Por</option>
+                      <option value="">Item 01</option>
+                      <option value="">Item 02</option>
+                      <option value="">Item 03</option>
+                    </select>
+                  </label>
+                </div>
+                <h4 class="siderbar-filter__subtitle">Tipo de vendedor</h4>
+                <div class="form__field">
+                  <label class="custom__checkbox"> <span class="cch-txt">Mejor calificado (15)</span>
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="custom__checkbox"> <span class="cch-txt">Verificado (8)</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="custom__checkbox"> <strong class="cch-txt">Todos (60)</strong>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+            </div>  
           </div>
         </div>
       </div>
       <div class="right-column-main column">
-        <div class="categories-grid categories-grid--2 cfx">
-          <div style="background-image: url('images/content/categories/Layer-1209.jpg')" class="category-elm--selected category-elm category-elm--a">
-            <div class="category-info">
-              <h4 class="category-info__name">
-                Diseño
-              </h4>
-            </div>
-          </div>
-          <div style="background-image: url('images/content/categories/Layer-1210.jpg')" class="category-elm category-elm--b">
-            <div class="category-info">
-              <h4 class="category-info__name">
-                AudioVisual
-              </h4>
-            </div>
-          </div>
-          <div style="background-image: url('images/content/categories/Layer-1211.jpg')" class="category-elm category-elm--c">
-            <div class="category-info">
-              <h4 class="category-info__name">
-                Música
-              </h4>
-            </div>
-          </div>
-          <div style="background-image: url('images/content/categories/Layer-1212.jpg')" class="category-elm category-elm--d">
-            <div class="category-info">
-              <h4 class="category-info__name">
-                Eventos
-              </h4>
-            </div>
-          </div>
+        <div class="results-counter">
+          <strong>8</strong> - <span>60</span> Resultados
         </div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, temporibus? Facilis, a reiciendis natus, perspiciatis enim quae, consectetur ratione id officia cumque dicta dignissimos commodi. Fugit assumenda et ex quod!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, quidem iure, voluptatum amet pariatur dicta similique, asperiores adipisci quasi impedit aspernatur ullam vitae repudiandae tenetur repellat quos unde delectus magni?
+        Magni quam, amet laudantium necessitatibus eaque nam praesentium totam, minus nulla corrupti fugiat magnam corporis quis debitis pariatur illo minima dolor impedit reiciendis exercitationem, veritatis possimus rerum repellendus? Fugiat, maiores.
+        Delectus totam illum vitae voluptatum ut! Error beatae veniam ab eius placeat laudantium perspiciatis molestias eveniet dolores dolorem accusamus minima esse sequi repellat, excepturi voluptatum aliquid voluptates ducimus facilis? Exercitationem?
+        Quia aliquam eligendi ad rem aut quos est, labore neque ducimus assumenda, impedit, dolor consequuntur pariatur obcaecati blanditiis et nulla placeat incidunt. Aliquid sed voluptatum in cum possimus repudiandae obcaecati.
+        Dolorem delectus quisquam eius molestias nulla est ullam sunt inventore, mollitia vero ad blanditiis doloribus temporibus qui, beatae dolor ipsa, cupiditate odit pariatur neque. Beatae et nostrum temporibus quisquam voluptas!
+        Repudiandae similique, minima ullam a, error doloribus est blanditiis nam maxime corrupti voluptatem harum provident pariatur molestiae quisquam dolorem aperiam. Dolores eum maiores aut est, delectus odio. Iste, porro ipsam!
+        Earum soluta molestias quibusdam dolore nostrum, doloremque nulla debitis magnam atque itaque sint deleniti repellendus perspiciatis quae numquam officiis saepe modi dolorum corrupti voluptatum laborum assumenda! Vero ab sequi sunt?
       </div>
     </div>
   </section>

@@ -1,0 +1,48 @@
+/* components/_breadcrumb */
+
+.breadcrumb {
+  display: block;
+  font-weight: 400;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.breadcrumb li {
+  color: #9966cc;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 1;
+}
+.breadcrumb li:not(:last-child):after {
+  color: #5d5d5d;
+  content: "/";
+  font-weight: 400;
+  line-height: 1;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.breadcrumb li a {
+  color: #5d5d5d;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+}
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+.breadcrumb .breadcrumb__current,
+.breadcrumb .breadcrumb__current a {
+  color: #9966cc;
+  font-weight: 500;
+}
+
+/* Results */
+
+.results-counter {
+  color: #2c154d;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: right;
+}
+.results-counter strong {
+  font-weight: 500;
+}
