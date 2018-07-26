@@ -68,3 +68,8 @@
   height: 13px;
   width: 18.5px;
 }
+.icon-favorite {
+  background-image: url('../../images/design/icons/icon-heart.svg');
+  height: 15px;
+  width: 15px;
+}
