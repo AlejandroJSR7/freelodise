@@ -10,5 +10,9 @@
   "devDependencies": {
     "browser-sync": "^2.24.6",
     "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
   }
 }

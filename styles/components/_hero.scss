@@ -113,7 +113,8 @@
   text-transform: uppercase;
 }
 .hero--internal--no-img {
-  height: 160px;;
+  background-image: none;
+  height: 160px;
 }
 .hero--internal--no-img .hero__title {
   color: #2c154d;

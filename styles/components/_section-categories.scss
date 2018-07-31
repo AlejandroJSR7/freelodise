@@ -27,6 +27,13 @@
   position: relative;
   width: 100%;
 }
+.category-elm a {
+  color: #ffffff;
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  width: 100%;
+}
 @media screen and (min-width: 768px) {
   .category-elm {
     height: 238px;

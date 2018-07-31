@@ -1,15 +1,28 @@
 var gulp = require('gulp'),
-    browserSync = require('browser-sync')
+    browserSync = require('browser-sync'),
+    gulpSass = require('gulp-sass'),
+    gulpSourcemaps = require('gulp-sourcemaps')
   ;
 
 
 // Tasks - List
 
-gulp.task('default', ['watch', 'browser-sync'])
+gulp.task('default', ['styles', 'watch', 'browser-sync'])
 gulp.task('watch', _task_Watch);
 gulp.task('browser-sync', _task_browserSync);
+gulp.task('styles', _task_gulpSass);
 
 // Tasks - Functions
+
+  function _task_gulpSass() {
+    console.log('ESTILOS');
+    return gulp.src('./styles/**/*.scss')
+      .pipe(gulpSourcemaps.init())
+      .pipe(gulpSass().on('error', gulpSass.logError))
+      .pipe(gulpSourcemaps.write())
+      .pipe(gulp.dest('./css'))
+      .pipe(browserSync.stream());
+  }
 
   function _task_browserSync() {
     browserSync.init({
@@ -20,6 +33,6 @@ gulp.task('browser-sync', _task_browserSync);
   }
 
   function _task_Watch() {
-    gulp.watch("./styles/**/**/*.css", browserSync.reload);
+    gulp.watch("./styles/**/**/*.scss", ['styles'],  browserSync.reload);
     gulp.watch("./*.html").on('change', browserSync.reload);
   }
