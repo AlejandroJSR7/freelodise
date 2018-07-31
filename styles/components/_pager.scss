@@ -1,0 +1,43 @@
+/* components/_pager */
+
+.pager {
+  color: #5d5d5d;
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0 20px;
+  a { 
+    color: #5d5d5d;
+    text-decoration: none;
+  }
+  .pager__item {
+    background-color: #ffffff;
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 1;
+    padding-top: 10px;
+    width: 40px;
+  }
+  .pager__item-separator {
+    width: auto;
+  }
+  .pager__item-arrow--left,
+  .pager__item-arrow--right {
+    background-color: #9966cc;
+    background-image: url('../images/design/icons/icon-arrow-right.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 8px 14px;
+    color: #ffffff;
+  }
+  .pager__item-arrow--left {
+    background-image: url('../images/design/icons/icon-arrow-left.svg');
+    border-radius: 3px 0 0 3px;
+  }
+  .pager__item-arrow--right {
+    background-image: url('../images/design/icons/icon-arrow-right.svg');
+    border-radius: 0 3px 3px 0;
+  }
+} 
