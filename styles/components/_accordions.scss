@@ -28,7 +28,7 @@
   text-transform: uppercase;
 }
 .accordion-filter h3:after {
-  background-image: url('../../images/design/icons/icon-accordion-arrow--down.svg');
+  background-image: url('../images/design/icons/icon-accordion-arrow--down.svg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -42,7 +42,7 @@
   width: 14px;
 }
 .accordion-filter h3.ui-accordion-header-active:after {
-  background-image: url('../../images/design/icons/icon-accordion-arrow--top.svg');
+  background-image: url('../images/design/icons/icon-accordion-arrow--top.svg');
 }
 .accordion-filter h3:not(.ui-accordion-header-active) {
   cursor: pointer;

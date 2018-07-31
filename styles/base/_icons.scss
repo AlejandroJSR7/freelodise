@@ -6,31 +6,31 @@
   background-size: contain;
   display: inline-block;
 }
-.icon-locacion { background-image: url('../../images/design/icons/navigation/icon-locacion.svg'); }
-.icon-entretenimiento { background-image: url('../../images/design/icons/navigation/icon-entretenimiento.svg'); }
-.icon-bienestar { background-image: url('../../images/design/icons/navigation/icon-bienestar.svg'); }
-.icon-educacion { background-image: url('../../images/design/icons/navigation/icon-educacion.svg'); }
-.icon-personal { background-image: url('../../images/design/icons/navigation/icon-personal.svg'); }
-.icon-negocios { background-image: url('../../images/design/icons/navigation/icon-negocios.svg'); }
-.icon-mas { background-image: url('../../images/design/icons/navigation/icon-mas.svg'); }
+.icon-locacion { background-image: url('../images/design/icons/navigation/icon-locacion.svg'); }
+.icon-entretenimiento { background-image: url('../images/design/icons/navigation/icon-entretenimiento.svg'); }
+.icon-bienestar { background-image: url('../images/design/icons/navigation/icon-bienestar.svg'); }
+.icon-educacion { background-image: url('../images/design/icons/navigation/icon-educacion.svg'); }
+.icon-personal { background-image: url('../images/design/icons/navigation/icon-personal.svg'); }
+.icon-negocios { background-image: url('../images/design/icons/navigation/icon-negocios.svg'); }
+.icon-mas { background-image: url('../images/design/icons/navigation/icon-mas.svg'); }
 [class^="icon-arrow-"] {
   height: 4px;
   width: 8px;
 }
 .icon-arrow-up {
-  background-image: url('../../images/design/icons/icon-arrow-up.svg');
+  background-image: url('../images/design/icons/icon-arrow-up.svg');
 }
 .icon-arrow-down {
-  background-image: url('../../images/design/icons/icon-arrow-up.svg');
+  background-image: url('../images/design/icons/icon-arrow-up.svg');
   transform: rotate(180deg);
 }
 .icon-user {
-  background-image: url('../../images/design/icons/icon-user-nav.svg');
+  background-image: url('../images/design/icons/icon-user-nav.svg');
   height: 21px;
   width: 21px;
 }
 .icon-play {
-  background-image: url('../../images/design/icons/icon-play.svg');
+  background-image: url('../images/design/icons/icon-play.svg');
   height: 24px;
   width: 24px;
 }
@@ -40,36 +40,36 @@
   height: 51px;
   width: 51px;
 }
-.icon-buscalo {background-image: url('../../images/design/icons/steps/icon-buscalo.svg');}
-.icon-comparalo {background-image: url('../../images/design/icons/steps/icon-comparalo.svg');}
-.icon-contratalo {background-image: url('../../images/design/icons/steps/icon-contratalo.svg');}
+.icon-buscalo {background-image: url('../images/design/icons/steps/icon-buscalo.svg');}
+.icon-comparalo {background-image: url('../images/design/icons/steps/icon-comparalo.svg');}
+.icon-contratalo {background-image: url('../images/design/icons/steps/icon-contratalo.svg');}
 .icon-separator {
-  background-image: url('../../images/design/icons/icon-arrow-separator.svg');
+  background-image: url('../images/design/icons/icon-arrow-separator.svg');
   height: 32px;
   width: 9px;
 }
 .icon-ubiety {
-  background-image: url('../../images/design/icons/icon-ubiety.svg');
+  background-image: url('../images/design/icons/icon-ubiety.svg');
   height: 14px;
   width: 9px;
 }
 .icon-facebook {
-  background-image: url('../../images/design/icons/icon-facebook.svg');
+  background-image: url('../images/design/icons/icon-facebook.svg');
   height: 17px;
   width: 9px;
 }
 .icon-instagram {
-  background-image: url('../../images/design/icons/icon-instagram.svg');
+  background-image: url('../images/design/icons/icon-instagram.svg');
   height: 17px;
   width: 17px;
 }
 .icon-message {
-  background-image: url('../../images/design/icons/icon-message.svg');
+  background-image: url('../images/design/icons/icon-message.svg');
   height: 13px;
   width: 18.5px;
 }
 .icon-favorite {
-  background-image: url('../../images/design/icons/icon-heart.svg');
+  background-image: url('../images/design/icons/icon-heart.svg');
   height: 15px;
   width: 15px;
 }
